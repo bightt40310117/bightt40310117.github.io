@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="UTF-8">
+		<title>JUST TEST</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link rel="stylesheet" href="assets/normalize.css">
+		<!-- Golbal CSS-->
+		<link rel="stylesheet" href="assets/golbal.css">
+		<!--bootstrap-grid CSS-->
+		<link rel="stylesheet" href="assets/vendor/bootstrap-grid.css">
+		<!--font-awesome.min.css-->
+		<link rel="stylesheet" href="assets/font-awesome/font-awesome.min.css">
+		<!--jquery.fancybox.min.css-->
+		<link rel="stylesheet" href="assets/vendor/fancybox-master/jquery.fancybox.min.css">
+		<!--components.css-->
+		<link rel="stylesheet" href="assets/components.css">
+		<!-- gallery header CSS -->
+		<link rel="stylesheet" href="assets/gallery.css">
+		<!-- style CSS -->
+		<link rel="stylesheet" href="assets/index-style.css">
+	</head>
+	<body>
+		<!--Sidebar-->
+		<div id="Sidebar-col" class="u-pull-left">
+			<div class="Nav">
+				<div id="container" class="u-pt-8">
+					<a href="index.html" class="logo"></a>
+					<ul id="Sidebar" class="option">
+						<li class="option-item">
+							<a href="index.html" class="option-link">HOME</a>
+						</li>
+						<li class="option-item">
+							<a href="about.html" class="option-link">About</a>
+						</li>
+						<li class="option-item">
+							<a href="Gallery.html" class="option-link">Gallery</a>
+						</li>
+						<li class="option-item">
+							<a href="Contact.html" class="option-link">Contact</a>
+						</li>
+						<a href="#!" class="close-btn">
+							<span></span>
+							<span></span>
+						</a>
+					</ul>
+					<a href="#Sidebar" class="menu-toggle">
+						<span></span>
+						<span></span>
+						<span></span>
+					</a>
+				</div>
+			</div>
+		</div>
+		<!--main-->
+		<div id="main-col">
+			<section id="galleries">
+				<!-- Photo Galleries -->
+				<div class="gallery u-pt-16 u-pr-16  u-pb-16 u-pl-16">
+					<header>
+						<h3 class="heading-3">Gallery</h3>
+					</header>
+					<ul class="tabs">
+						<li><a href="#" data-tag="all" class="button active">All</a></li>
+						<li><a href="#" data-tag="Photograph" class="button">Photograph</a></li>
+						<li><a href="#" data-tag="Food" class="button">Food</a></li>
+						<li><a href="#" data-tag="Designs" class="button">Designs</a></li>
+					</ul>
+					<div class="content">
+						<div class="media all Designs">
+							<a href="image/design/ipad.png" data-fancybox="group" ><img class="image" src="image/Thumbnail/ipad.png"/></a>
+						</div>
+						<div class="media all photograph">
+							<a href="image/photograph/photograph-1.jpg" data-fancybox="group"><img class="image" src="image/Thumbnail/rsz-rsz-gallery-photograph-1.jpg" /></a>
+						</div>
+						<div class="media all Food">
+							<a href="image/photograph/french fries.jpg" data-fancybox="group"><img class="image" src="image/Thumbnail/french fries.jpg"/></a>
+						</div>
+						<div class="media all Designs">
+							<a href="image/design/design-Still.jpg" data-fancybox="group"><img class="image" src="image/Thumbnail/rsz-design.jpg"/>
+							</a>
+						</div>
+						<div class="media all Designs">
+							<a href="image/design/pexels-photo.jpg" data-fancybox="group"><img class="image" src="image/Thumbnail/pexels-photo.jpg"/></a>
+						</div>
+						<div class="media all Designs">
+							<a href="image/design/card.jpg" data-fancybox="group"><img class="image" src="image/Thumbnail/card.png"/></a>
+						</div>
+						<div class="media all photograph">
+							<a href="image/photograph/somewhere.jpg" data-fancybox="group"><img class="image" src="image/Thumbnail/somewhere.jpg"/></a>
+						</div>
+						<div class="media all Food">
+							<a href="image/photograph/eel.jpg" data-fancybox="group"><img class="image" src="image/Thumbnail/eel.jpg"/></a>
+						</div>
+						<footer><ul class="pagination">
+							<li><a href="#!">«</a></li>
+							<li><a href="#!">1</a></li>
+							<li><a class="#!" href="#">2</a></li>
+							<li><a href="#!">3</a></li>
+							<li><a href="#!">4</a></li>
+							<li><a href="#!">5</a></li>
+							<li><a href="#!">6</a></li>
+							<li><a href="#!">»</a></li>
+						</ul></footer>
+					</div>
+				</div>
+			</section>
+			<!-- END Gallery-->
+		</body>
+		<script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
+		<script src="assets/vendor/jquery-3.3.1.min.js"></script>
+		<script src="assets/vendor/fancybox-master/jquery.fancybox.min.js"></script>
+		<script type="text/javascript">
+								jQuery(function($) { //使用jQuery
+				// fancybox initialize
+				$('[data-fancybox="group"]').fancybox({
+				// Options will go here
+				loop: true,
+				buttons: [
+				"zoom",
+				//"share",
+				//"slideShow",
+				//"fullScreen",
+				//"download",
+				//"thumbs",
+				"close"
+				],
+				infobar: false,
+				hideScrollbar: false
+				});
+				});
+		</script>
+	</html>
